@@ -1,20 +1,48 @@
-//Navbar Fixed
-window.onscroll=function(){
-    const header=document.querySelector('header');
-    const fixedNav = header.offsetTop;
+const header = document.querySelector('header');
+const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#nav-menu');
+const navLinks = navMenu.querySelectorAll('a');
+const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset>fixedNav){
+const setNavbarState = () => {
+    if (window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
-    }else{
+    } else {
         header.classList.remove('navbar-fixed');
     }
-}
+};
 
-//Hamburger
-const hamburger=document.querySelector('#hamburger');
-const navMenu=document.querySelector('#nav-menu');
+const closeMenu = () => {
+    hamburger.classList.remove('hamburger-active');
+    navMenu.classList.add('hidden');
+    hamburger.setAttribute('aria-expanded', 'false');
+};
 
-hamburger.addEventListener('click', function(){
+const toggleMenu = () => {
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
+    hamburger.setAttribute('aria-expanded', String(!isExpanded));
+};
+
+window.addEventListener('scroll', setNavbarState);
+setNavbarState();
+
+hamburger.addEventListener('click', toggleMenu);
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('click', (event) => {
+    if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+        closeMenu();
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeMenu();
+    }
 });

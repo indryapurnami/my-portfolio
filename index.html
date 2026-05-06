@@ -4,239 +4,565 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Purnami</title>
+    <title>Purnami Indryaswari | Mobile Application Developer</title>
+    <meta
+        name="description"
+        content="Portfolio of Purnami Indryaswari, a mobile application developer focused on Android, iOS, and Flutter apps with production experience in Kotlin, Swift, and Dart."
+    >
+    <meta name="theme-color" content="#14b8a6">
+    <meta property="og:title" content="Purnami Indryaswari | Mobile Application Developer">
+    <meta
+        property="og:description"
+        content="Android, iOS, and Flutter developer portfolio featuring product-focused mobile apps, cross-platform delivery, and production experience."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="dist/img/purnami2.png">
     <link href="dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Header Start -->
+<body class="bg-slate-50 text-dark">
+    <a
+        href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[9999] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-dark focus:shadow-lg"
+    >
+        Skip to content
+    </a>
+
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">purnami indryaswari</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6 tracking-wide">Purnami Indryaswari</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <button
+                        id="hamburger"
+                        name="hamburger"
+                        type="button"
+                        class="block absolute right-4 lg:hidden"
+                        aria-expanded="false"
+                        aria-controls="nav-menu"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="sr-only">Open navigation</span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav
+                        id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[260px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+                        aria-label="Primary navigation"
+                    >
                         <ul class="block lg:flex">
                             <li class="group">
-                               <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a> 
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                             </li>
-                            <!-- <li class="group">
-                                <a href="#experience" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Experience & Education</a> 
-                             </li> -->
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a> 
-                             </li>
-                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">My Portfolio</a> 
-                             </li>
-                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">My Contact</a> 
-                             </li>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Skills</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Header End -->
 
-
-    <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Hi👋, I am <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Purnami Indryaswari</span></h1>
-                    <h2 class="font-medium text-secondary text-lg mb-10 lg:text-2xl">Mobile Application Developer</h2>
-                    <!-- <p class="font-medium text-slate-400 mb-10 leading-relaxed">I am a Mobile Developer</p> -->
-
-<!--                     <a href="dist/file/myCV.pdf" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Check out my CV</a> -->
-                </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="dist/img/purnami2.png" alt="" class="max-w-full mx-auto"/>
-                        <span class="absolute -bottom-5 -z-10 left-1/2 -translate-x-1/2 md:scale-110">
-                            <svg width="250" height="250" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#14b8a6" d="M51.6,-19.1C60,8.8,54.9,38.8,36.4,52.9C17.8,67.1,-14.3,65.4,-35.3,49.9C-56.3,34.3,-66.2,4.8,-58.4,-22.4C-50.7,-49.5,-25.4,-74.3,-1.8,-73.7C21.7,-73.1,43.3,-47.1,51.6,-19.1Z" transform="translate(100 100) scale(1.1)" />
-                              </svg>
-                        </span>
+    <main id="main-content">
+        <section id="home" class="pt-32 pb-24 lg:pt-40">
+            <div class="container">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full self-center px-4 lg:w-7/12">
+                        <p class="inline-flex items-center rounded-full bg-teal-100 px-4 py-2 text-sm font-semibold text-primary">
+                            Available for mobile app opportunities
+                        </p>
+                        <h1 class="mt-6 text-4xl font-bold text-dark lg:text-6xl">
+                            Purnami Indryaswari
+                        </h1>
+                        <p class="mt-4 text-xl font-medium text-secondary lg:text-2xl">
+                            Mobile Application Developer for Android, iOS, and Flutter products
+                        </p>
+                        <p class="mt-6 max-w-2xl text-base leading-8 text-secondary lg:text-lg">
+                            I build user-focused mobile applications with experience in Kotlin, Java, Swift, SwiftUI, and Flutter.
+                            My work spans production features, authentication flows, inventory systems, NFC experiences, and cross-platform delivery.
+                        </p>
+                        <div class="mt-10 flex flex-wrap gap-4">
+                            <a
+                                href="#portfolio"
+                                class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-90 hover:shadow-lg"
+                            >
+                                View Projects
+                            </a>
+                            <a
+                                href="dist/file/I Gusti Ayu Purnami Indryaswari.pdf"
+                                class="rounded-full border border-primary px-8 py-3 text-base font-semibold text-primary transition duration-300 ease-in-out hover:bg-primary hover:text-white"
+                            >
+                                Download CV
+                            </a>
+                            <a
+                                href="#contact"
+                                class="rounded-full border border-slate-300 px-8 py-3 text-base font-semibold text-dark transition duration-300 ease-in-out hover:border-primary hover:text-primary"
+                            >
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full self-end px-4 lg:w-5/12">
+                        <div class="relative mt-14 lg:mt-0">
+                            <div class="absolute inset-x-10 top-10 -z-10 h-64 rounded-full bg-teal-200 blur-3xl opacity-80"></div>
+                            <img
+                                src="dist/img/purnami2.png"
+                                alt="Portrait of Purnami Indryaswari"
+                                class="max-w-full mx-auto rounded-[2rem] border border-teal-100 bg-white p-4 shadow-xl"
+                                width="200"
+                                height="200"
+                                decoding="async"
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Hero Secion End -->
+        </section>
 
-    <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32" >
-        <div class="container">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">About Me</h4>
-                <p class="font-medium text-base text-secondary lg:text-lg">A highly dedicated Computer Science graduate from Udayana University with over 2 years of hands-on experience as a mobile application developer. I have developed expertise in Kotlin and Java for Android development, as well as Swift and SwiftUI for iOS applications, complemented by proficiency in Dart for building cross-platform apps using Flutter. My journey in mobile development is fueled by a passion for creating innovative, user-friendly, and visually appealing applications that provide seamless functionality. Beyond technical skills, I thrive on solving complex challenges, collaborating with cross-functional teams, and staying ahead of industry trends. I am committed to continuous learning and delivering impactful digital solutions that elevate user experiences and meet business goals.</p>
+        <section id="about" class="pb-24">
+            <div class="container">
+                <div class="grid gap-10 rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About</p>
+                        <h2 class="mt-3 text-3xl font-bold text-dark lg:text-4xl">Building mobile apps that are practical, polished, and ready to ship</h2>
+                        <p class="mt-6 text-base leading-8 text-secondary lg:text-lg">
+                            I am a Computer Science graduate from Udayana University with more than two years of hands-on mobile development experience.
+                            I enjoy turning business requirements into applications that feel intuitive for users and stable in production.
+                        </p>
+                        <p class="mt-4 text-base leading-8 text-secondary lg:text-lg">
+                            My background covers native Android with Kotlin and Java, iOS development with Swift and SwiftUI,
+                            and cross-platform delivery with Flutter. I care about clean user flows, maintainable implementation,
+                            and working closely with teams to ship useful product improvements.
+                        </p>
+                    </div>
+                    <div class="grid gap-4">
+                        <div class="rounded-2xl bg-slate-50 p-6">
+                            <h3 class="text-lg font-semibold text-dark">What I bring</h3>
+                            <p class="mt-3 text-sm leading-7 text-secondary">
+                                Production mobile development, authentication flows, inventory and ordering systems, NFC-based features, and multi-platform app delivery.
+                            </p>
+                        </div>
+                        <div class="rounded-2xl bg-slate-50 p-6">
+                            <h3 class="text-lg font-semibold text-dark">Working style</h3>
+                            <p class="mt-3 text-sm leading-7 text-secondary">
+                                Detail-oriented, collaborative, and focused on building experiences that are useful for both end users and business operations.
+                            </p>
+                        </div>
+                        <div class="rounded-2xl bg-slate-50 p-6">
+                            <h3 class="text-lg font-semibold text-dark">Current focus</h3>
+                            <p class="mt-3 text-sm leading-7 text-secondary">
+                                Growing deeper in scalable mobile architecture, modern UI implementation, and product-minded delivery across Android and iOS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- About Section End -->
+        </section>
 
-    <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-10">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <!-- <h2 class="font-bold text-dark text-3
-                        xl mb-4">Latest Project</h2> 
-                        <div class="mb-12 p-4 ">
-                            <div class="rounded-md shadow-md overflow-hidden">
-                                <a href="dist/img/myInstagram.png" class="w-9 h-9">
-                                    <img src="dist/img/myInstagram.png" width="w-full">
-                                </a>
+        <section id="skills" class="pb-24">
+            <div class="container">
+                <div class="max-w-3xl px-4">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Skills</p>
+                    <h2 class="mt-3 text-3xl font-bold text-dark lg:text-4xl">Core stack and strengths</h2>
+                    <p class="mt-4 text-base leading-8 text-secondary lg:text-lg">
+                        I work across native and cross-platform development, with an emphasis on shipping reliable features and clear user experiences.
+                    </p>
+                </div>
+                <div class="mt-10 grid gap-6 px-4 md:grid-cols-2 xl:grid-cols-4">
+                    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <h3 class="text-lg font-semibold text-dark">Mobile Languages</h3>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Java</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Swift</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Dart</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <h3 class="text-lg font-semibold text-dark">Frameworks</h3>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Android SDK</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">SwiftUI</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Flutter</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <h3 class="text-lg font-semibold text-dark">Product Work</h3>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Authentication</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Inventory</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Ordering Flow</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">NFC</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <h3 class="text-lg font-semibold text-dark">Focus Areas</h3>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">UI Implementation</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Cross-platform Delivery</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">User Flows</span>
+                            <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Production Readiness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="pb-24">
+            <div class="container">
+                <div class="max-w-3xl px-4">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Portfolio</p>
+                    <h2 class="mt-3 text-3xl font-bold text-dark lg:text-4xl">Selected mobile projects</h2>
+                    <p class="mt-4 text-base leading-8 text-secondary lg:text-lg">
+                        A selection of apps I have built across Android, iOS, and Flutter, including commercial work and personal projects.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-8 px-4 md:grid-cols-2">
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/indoarsip.png" aria-label="Open Gudangku App screenshot">
+                            <img
+                                src="dist/img/indoarsip.png"
+                                alt="Gudangku App warehouse inventory mobile screens"
+                                class="h-64 w-full object-cover"
+                                width="1920"
+                                height="1080"
+                                loading="eager"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Flutter</span>
                             </div>
-                            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">My Instagram</h3>
-                            <p class="font-medium text-base text-secondary mb-2">This is my first portfolio project for iOS. I decided to create this app because I often use Instagram and wanted to replicate its functionality as a challenge. The app includes features like user authentication, post feeds, profile management, etc. I used the Pixabay API to fetch and display images within the app. It was developed using SwiftUI and utilizes Firebase for backend services such as authentication and data storage.
+                            <h3 class="mt-4 text-2xl font-semibold text-dark">Gudangku App (Indoarsip)</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Cross-platform warehouse and inventory app for Indoarsip. Built to support authentication, order flows, password management,
+                                and a consistent Android and iOS user experience from a single Flutter codebase.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Flutter</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Authentication</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Inventory</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Cross-platform</span>
+                            </div>
+                        </div>
+                    </article>
 
-                                Through this project, I gained valuable experience in managing data with Firestore, creating dynamic user interfaces, and improving my Swift programming skills.</p>
-                            <a href="https://github.com/purnami/MyInstagram" class="text-base text-link">Code in Github</a>
-                        </div> -->
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/moodtrack.png" aria-label="Open MoodTrack screenshot">
+                            <img
+                                src="dist/img/moodtrack.png"
+                                alt="MoodTrack mood tracking app interface"
+                                class="h-64 w-full object-cover"
+                                width="1920"
+                                height="1080"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">MoodTrack</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Android app for tracking daily moods and helping users respond more intentionally to how they feel.
+                                The app records mood entries and recommends activities based on the user&apos;s current mood.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Jetpack Compose</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Hilt</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Coroutines</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">OpenAI API</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">YouTube API</span>
+                            </div>
+                            <a
+                                href="https://github.com/purnami/MoodTrack"
+                                class="mt-6 inline-flex text-base font-semibold text-link hover:underline"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View code on GitHub
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/telkomsel.png" aria-label="Open Self Service Telkomsel screenshot">
+                            <img
+                                src="dist/img/telkomsel.png"
+                                alt="Self Service Telkomsel kiosk mobile interface"
+                                class="h-64 w-full object-cover"
+                                width="2097"
+                                height="1185"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="mt-4 text-2xl font-semibold text-dark">Self Service Telkomsel</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Android self-service application for Telkomsel customers on Imin S1 devices, covering top-up flows,
+                                card replacement, Telkomsel Halo bill payments, e-KTP reading, and card issuing hardware integration.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Java</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Hardware Integration</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Payments</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/myInstagram.png" aria-label="Open My Instagram screenshot">
+                            <img
+                                src="dist/img/myInstagram.png"
+                                alt="My Instagram iOS app interface"
+                                class="h-64 w-full object-cover"
+                                width="1920"
+                                height="1080"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">iOS</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">My Instagram</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                iOS portfolio project inspired by Instagram, with authentication, feeds, profile management,
+                                and Firebase-backed data handling. Built as an exploration of SwiftUI and Firestore-driven interfaces.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">SwiftUI</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Firebase</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Firestore</span>
+                            </div>
+                            <a
+                                href="https://github.com/purnami/MyInstagram"
+                                class="mt-6 inline-flex text-base font-semibold text-link hover:underline"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View code on GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/zapkad.png" aria-label="Open Digital Business Card screenshot">
+                            <img
+                                src="dist/img/zapkad.png"
+                                alt="Digital Business Card app interface"
+                                class="h-64 w-full object-cover"
+                                width="1920"
+                                height="1080"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">Digital Business Card</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Android app for creating and sharing professional digital business cards with NFC support,
+                                making contact exchange faster and more practical during networking.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">NFC</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Sharing Flow</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/expert-system.png" aria-label="Open Expert System Diagnosis screenshot">
+                            <img
+                                src="dist/img/expert-system.png"
+                                alt="Expert system app for swine disease diagnosis"
+                                class="h-64 w-full object-cover"
+                                width="2097"
+                                height="1185"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">Expert System Diagnosis of Swine Disease</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Kotlin-based diagnostic app that helps pig farmers identify diseases based on symptoms,
+                                with confidence values and disease references to support decision making.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Decision Support</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Domain Logic</span>
+                            </div>
+                            <a
+                                href="https://github.com/purnami/codetugasakhir"
+                                class="mt-6 inline-flex text-base font-semibold text-link hover:underline"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View code on GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/petcare.png" aria-label="Open Petcare e-commerce screenshot">
+                            <img
+                                src="dist/img/petcare.png"
+                                alt="Petcare e-commerce mobile app interface"
+                                class="h-64 w-full object-cover"
+                                width="2097"
+                                height="1185"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">E-Commerce Petcare</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Kotlin e-commerce project featuring catalog browsing, cart flow, direct purchase,
+                                login and registration, and manual address handling for pet-related shopping needs.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">E-commerce</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Cart</span>
+                            </div>
+                            <a
+                                href="https://github.com/purnami/petcare/tree/master/petcare"
+                                class="mt-6 inline-flex text-base font-semibold text-link hover:underline"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View code on GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-slate-200">
+                        <a href="dist/img/movie.png" aria-label="Open Movie Catalogue screenshot">
+                            <img
+                                src="dist/img/movie.png"
+                                alt="Movie Catalogue app interface"
+                                class="h-64 w-full object-cover"
+                                width="2097"
+                                height="1185"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-dark">Android</span>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-dark">Movie Catalogue</h3>
+                            <p class="mt-3 text-base leading-7 text-secondary">
+                                Kotlin app connected to the MovieDB API with movie listing, detail pages, favorites,
+                                and sharing features as a complete catalog browsing experience.
+                            </p>
+                            <div class="mt-5 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Kotlin</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">API Integration</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-2 text-sm font-medium text-dark">Favorites</span>
+                            </div>
+                            <a
+                                href="https://github.com/purnami/FinalSubmissionJetpack/tree/master/SubmissionAkhirFix"
+                                class="mt-6 inline-flex text-base font-semibold text-link hover:underline"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View code on GitHub
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/indoarsip.png" class="w-9 h-9">
-                            <img src="dist/img/indoarsip.png" width="w-full">
+        </section>
+
+        <section id="contact" class="pb-24">
+            <div class="container">
+                <div class="rounded-[2rem] bg-dark px-6 py-10 text-center text-white shadow-xl lg:px-12 lg:py-14">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-teal-200">Contact</p>
+                    <h2 class="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">Let&apos;s build something useful</h2>
+                    <p class="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-300 lg:text-lg">
+                        If you are looking for a mobile developer for Android, iOS, or Flutter work, feel free to reach out.
+                    </p>
+                    <div class="mt-10 grid gap-4 md:grid-cols-2">
+                        <a
+                            href="https://wa.me/6283111313269"
+                            class="rounded-2xl bg-white/10 p-6 text-left transition duration-300 ease-in-out hover:bg-white/15"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <p class="text-sm font-semibold uppercase tracking-wide text-teal-200">WhatsApp</p>
+                            <p class="mt-2 text-xl font-semibold text-white">+62 831-1131-3269</p>
+                            <p class="mt-2 text-sm leading-7 text-slate-300">Fastest way to reach me for opportunities or project discussions.</p>
+                        </a>
+                        <a
+                            href="mailto:purnami.indryaswari@gmail.com"
+                            class="rounded-2xl bg-white/10 p-6 text-left transition duration-300 ease-in-out hover:bg-white/15"
+                        >
+                            <p class="text-sm font-semibold uppercase tracking-wide text-teal-200">Email</p>
+                            <p class="mt-2 break-all text-xl font-semibold text-white">purnami.indryaswari@gmail.com</p>
+                            <p class="mt-2 text-sm leading-7 text-slate-300">Best for formal inquiries, interviews, and collaboration follow-ups.</p>
                         </a>
                     </div>
-                    <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">Gudangku App (Indoarsip)</h3>
-                    <p class="font-medium text-base text-secondary mb-2">Gudangku is a mobile application developed for Indoarsip, designed to streamline warehouse storage and inventory management. Built using Flutter, the app delivers a seamless and consistent user experience on both Android and iOS platforms.
-
-<br>Key features of the app include:<br>
-User Authentication: Secure login system to ensure access control<br>
-
-Order Management: Users can browse and place orders for storage-related products<br>
-
-Password Management: Allows users to change their account password securely<br>
-
-Responsive UI: Optimized interface for both Android and iOS devices<br>
-
-Cross-platform Build: Successfully built and deployed for Android and iPhone devices using a single Flutter codebase<br>
-
-This project showcases my ability to build and deploy production-ready cross-platform apps, manage user flows, and implement secure authentication and business-specific features.</p>
-<!--                     <a href="https://github.com/purnami/MyInstagram" class="text-base text-link">Code in Github</a> -->
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/myInstagram.png" class="w-9 h-9">
-                            <img src="dist/img/myInstagram.png" width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">My Instagram</h3>
-                    <p class="font-medium text-base text-secondary mb-2">This is my first portfolio project for iOS. I decided to create this app because I often use Instagram and wanted to replicate its functionality as a challenge. The app includes features like user authentication, post feeds, profile management, etc. I used the Pixabay API to fetch and display images within the app. It was developed using SwiftUI and utilizes Firebase for backend services such as authentication and data storage.
-
-                        Through this project, I gained valuable experience in managing data with Firestore, creating dynamic user interfaces, and improving my Swift programming skills.</p>
-                    <a href="https://github.com/purnami/MyInstagram" class="text-base text-link">Code in Github</a>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/zapkad.png" class="w-9 h-9">
-                            <img src="dist/img/zapkad.png"  width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Digital Business Card</h3>
-                        <p class="font-medium text-base text-secondary">This application is made using the Kotlin programming language. <br> This app allows users to create and share professional digital business cards seamlessly. With NFC functionality, users can quickly exchange their information by tapping their phones together. The app offers a user-friendly interface for card creation and management, and the digital business cards can be easily shared with anyone via NFC or other sharing options.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/telkomsel.png" class="w-9 h-9">
-                            <img src="dist/img/telkomsel.png"  width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Self Service Telkomsel</h3>
-                        <p class="font-medium text-base text-secondary">This application is made using the Java and Kotlin programming language. It uses a custom device called Imin S1, this is intended for Telkomsel provider customers, where they can top up, replace lost or damaged cards and pay Telkomsel Halo bills independently.
-                            In this application there is a process of reading the E-KTP using the E-KTP reader and issuing the card using a card dispenser</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/expert-system.png" class="w-9 h-9">
-                            <img src="dist/img/expert-system.png" width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">Expert System Diagnosis of Swine Disease</h3>
-                    <p class="font-medium text-base text-secondary mb-2">This application is made using the Kotlin programming language. <br> It's useful for helping pig farmers to be able to find out the disease suffered by their pigs according to the symptoms they are experiencing. <br> It has the main features of diagnosing pig diseases, providing confidence values ​​in the diagnosis results, and also providing a list of pig diseases along with descriptions and symptoms.</p>
-                    <a href="https://github.com/purnami/codetugasakhir" class="text-base text-link">Code in Github</a>
-                </div>
-                
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/petcare.png" class="w-9 h-9">
-                            <img src="dist/img/petcare.png" width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">E-Commerce Petcare</h3>
-                    <p class="font-medium text-base text-secondary mb-2">This application is made using the Kotlin programming language. <br> This simple e-commerce application has a feature that displays a list of items for sale for pet needs, we can add items to the basket or buy them directly, besides that there are login, registration features, enter manual addresses, and others.</p>
-                    <a href="https://github.com/purnami/petcare/tree/master/petcare" class="text-base text-link">Code in Github</a>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <a href="dist/img/movie.png" class="w-9 h-9">
-                            <img src="dist/img/movie.png" width="w-full">
-                        </a>
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Movie Catalogue</h3>
-                    <p class="font-medium text-base text-secondary mb-2">This application is made using the Kotlin programming language. <br> It displays a list of movies from the MovieDB API, it can display movie details, add to favorites, display a list of favorites and share the movie</p>
-                    <a href="https://github.com/purnami/FinalSubmissionJetpack/tree/master/SubmissionAkhirFix" class="text-base text-link">Code in Github</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Portfolio Section End -->
+        </section>
+    </main>
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <footer class="pb-10">
         <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 sm:text-4xl lg:text-5xl">Contact Me</h2>
-                    <div class="flex font-semibold text-xl items-center justify-center mb-1">
-                        <svg role="img" class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        <h1>+62 83111313269</h1>
-                    </div>
-                    <div class="flex font-semibold text-xl items-center justify-center">
-                        <svg role="img" class="w-6 h-6 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-                        purnami.indryaswari@gmail.com
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-2">
-                    <div class="max-w-xl mx-auto text-center">
-                        <h4 class="font-normal text-base text-primary mb-2">©2022 by Purnami Indryaswari</h4>
-                    </div>
-                </div>
+            <div class="px-4 text-center">
+                <p class="text-sm font-medium text-secondary">© 2026 Purnami Indryaswari. Built with Tailwind CSS.</p>
             </div>
         </div>
     </footer>
-    <!-- Footer End -->
 
-<script src="dist/js/script.js"></script>
+    <script src="dist/js/script.js" defer></script>
 </body>
 </html>

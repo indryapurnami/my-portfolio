@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
 }
 
 .navbar-fixed {
@@ -26,4 +31,8 @@ body{
 
 .hamburger-active > span:nth-child(3){
     @apply -rotate-45
+}
+
+section{
+    scroll-margin-top: 96px;
 }
